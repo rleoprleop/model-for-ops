@@ -19,7 +19,7 @@ spec:
           image: jinyoung/order:stable
           ports:
             - containerPort: 8080
-          readinessProbe:    # 이부분!
+          readinessProbe:    # 이부분
             httpGet:
               path: '/orders'
               port: 8080
